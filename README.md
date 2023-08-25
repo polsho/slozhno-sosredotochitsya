@@ -1,3 +1,3 @@
-https://github.com/polsho/slozhno-sosredotochitsya.git
+https://github.com/polsho/slozhno-sosredotochitsya
 # slozhno-sosredotochitsya
 Проект "Сложно сосредоточиться"
