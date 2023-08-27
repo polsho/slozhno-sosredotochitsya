@@ -137,8 +137,8 @@
 }
 
 .content__section {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 20px;
   padding: 0 var(--page-padding);
   margin-block-end: 50px;
@@ -172,6 +172,10 @@
     inline-size: max(206px, 50%);
     justify-self: end;
   }
+
+  .content__section__title-shift {
+    grid-template-columns: 1fr 2fr;
+  }
 }
 
 @media (376px < width <= 768px) {
@@ -191,6 +195,10 @@
   }
   
   .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .content__section__items-shift .content__section__item-list  {
     flex-direction: row;
   }
 }
