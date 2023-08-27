@@ -15,7 +15,7 @@
   --accent-color: #FF0070;
 
   background-image: url(../images/cover-image-dark.png);
-  color: var(--accent-color, #353430);
+  color: var(--text-color);
 }
 
 .page.theme_dark .title-decor {
@@ -39,4 +39,8 @@
 
 .page.theme_dark .header__decor-element::after {
   display: inline-block;
+}
+
+.page.theme_dark .content__section-title {
+  color: var(--accent-color);
 }

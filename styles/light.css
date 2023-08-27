@@ -39,6 +39,10 @@
   display: none;
 }
 
+.page.theme_light .content__section-title {
+  color: var(--text-color);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --bg-color: #FFF1F7;
@@ -70,6 +74,10 @@
     .header__decor-element,
     .header__decor-element::after {
       display: none;
+    }
+
+    .content__section-title {
+      color: var(--text-color);
     }
 
 }
