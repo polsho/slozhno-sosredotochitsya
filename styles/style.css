@@ -2,9 +2,14 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  min-inline-size: 23.44rem;
   margin: 0;
   background-color: var(--bg-color, #000028);
+  background-image: url(../images/cover-image-dark.png);
+  background-position: center;
+  /* background-origin: border-box; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: var(--text-color, #F1B2CE);
   font-size: 1.125rem;
   font-family: var(--main-font, sans-serif);
@@ -47,12 +52,9 @@
   display: grid;
   grid-template-rows: 1fr auto 1fr;
   min-block-size: 668px;
+  max-block-size: 100vh;
+  margin: 0 auto;
   padding: var(--page-padding);
-  background-image: url(../images/cover-image-dark.png);
-  background-position: center;
-  background-origin: border-box;
-  background-size: cover;
-  background-repeat: no-repeat;
   color: var(--accent-color, #FF0070);
 }
 
@@ -76,7 +78,7 @@
   block-size: 9px;
   background-color: var(--accent-color);
   border-radius: 50%;
-  box-shadow: 0px 0px 4px #FF0070;
+  box-shadow: 0px 0px 4px #FF0070;  /* не работает размытие */
 }
 
 .header__theme-menu {
@@ -94,7 +96,7 @@
 .header__theme-menu-button {
   background-color: transparent;
   border: 1px solid transparent;
-  appearance: none;
+  appearance: none;                  /*проверить необходимость*/
   padding: 0 0.72em;
   cursor: pointer;
 }
@@ -127,4 +129,36 @@
 
 .header__text {
   align-self: center;
+}
+
+@media (width > 376px) {
+  .header__title {
+    position: relative;
+    inset-inline-end: var(--page-padding);
+  }
+  .header__text {
+    inline-size: max(206px, 50%);
+    justify-self: end;
+  }
+}
+
+@media (376px < width <= 768px) {
+  .header {
+    block-size: calc(100vw / 0.75);
+  }
+}
+
+@media (width > 768px) {
+  .header {
+    block-size: calc(100vw * 0.75);
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+  
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
 }

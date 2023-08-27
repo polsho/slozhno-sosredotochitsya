@@ -13,6 +13,9 @@
   --title-color: #DB00FF;
   --text-color: #F1B2CE;
   --accent-color: #FF0070;
+
+  background-image: url(../images/cover-image-dark.png);
+  color: var(--accent-color, #353430);
 }
 
 .page.theme_dark .title-decor {
@@ -28,11 +31,6 @@
 .page.theme_dark .decorated-zone::after {
   border-block-end: 1px solid var(--accent-color);
   border-inline-start: 1px solid var(--accent-color);
-}
-
-.page.theme_dark .header {
-  background-image: url(../images/cover-image-dark.png);
-  color: var(--accent-color, #353430);
 }
 
 .page.theme_dark .header__decor-element {
