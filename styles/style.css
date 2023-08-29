@@ -2,7 +2,6 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  margin: 0;
   background-color: var(--bg-color, #000028);
   background-image: url(../images/cover-image-dark.png);
   background-position: center;
@@ -156,7 +155,6 @@
 
 .content__section {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 20px;
   padding: 0 var(--page-padding);
   margin-block-end: 50px;
@@ -170,8 +168,7 @@
 }
 
 .content__section__item-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 20px;
 }
 
@@ -236,6 +233,14 @@
     grid-template-rows: repeat(3, 1fr);
   }
   
+  .content__section__items-shift {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .content__section__items-shift .content__section__item-list {
+    grid-row-start: 2;
+    grid-column: span 3;
+  }
 }
 
 @media (376px < width <= 768px) {
@@ -261,6 +266,6 @@
   }
 
   .content__section__items-shift .content__section__item-list  {
-    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
