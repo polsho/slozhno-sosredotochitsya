@@ -33,6 +33,10 @@
   border-inline-start: 1px solid var(--accent-color);
 }
 
+.page.theme_dark .header {
+  color: var(--accent-color);
+}
+
 .page.theme_dark .header__decor-element {
   display: grid;
 }
