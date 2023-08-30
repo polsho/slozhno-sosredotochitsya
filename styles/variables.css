@@ -5,9 +5,9 @@
 
 :root {
   --bg-color: #000028;
-  --title-color: #DB00FF;
-  --text-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --main-font: 'IBM Plex mono';
+  --title-color: #db00ff;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --main-font: "IBM Plex mono";
   --page-padding: min(2.67vw, 20px);
 }
