@@ -183,13 +183,13 @@
   margin-block-start: 0.5556em;
 }
 
-.content__section__advises {
+.content__section__advices {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.content__section__advise-title {
+.content__section__advice-title {
   font-weight: 400;
 }
 
@@ -293,7 +293,7 @@
   }
 
   .content__section__title-shift .content__section__item-list,
-  .content__section__title-shift .content__section__advises {
+  .content__section__title-shift .content__section__advices {
     grid-column: span 2;
   }
 
