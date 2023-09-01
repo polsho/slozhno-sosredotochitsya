@@ -224,6 +224,11 @@
   .header__title {
     position: relative;
     inset-inline-end: var(--page-padding);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__text {
@@ -272,11 +277,15 @@
   
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   /* .header,
   .footer {
     min-block-size: calc(100vw * 0.75);
   } */
+
+  .header__title {
+    text-shadow: 4px 4px 0px #FF0070;
+  }
 
   .header__theme-menu {
     justify-self: center;
@@ -285,11 +294,6 @@
 
   .header__theme-menu-list {
     flex-direction: row;
-  }
-
-  .header__title,
-  .footer__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .content__section__title-shift {
