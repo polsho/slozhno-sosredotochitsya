@@ -103,7 +103,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid currentColor;
+  outline: 1px solid rgba(255, 0, 112, 0.40);
 }
 
 .header__theme-menu-button:focus {
@@ -268,21 +268,7 @@
   }
 }
 
-@media (376px < width <= 768px) {
-  /* .header,
-  .footer {
-    min-block-size: calc(100vw / 0.75);
-  } */
-
-  
-}
-
 @media (min-width: 1024px) {
-  /* .header,
-  .footer {
-    min-block-size: calc(100vw * 0.75);
-  } */
-
   .header__title {
     text-shadow: 4px 4px 0px #FF0070;
   }

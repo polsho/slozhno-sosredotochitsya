@@ -45,6 +45,10 @@
   display: inline-block;
 }
 
+.page.theme_dark .header__theme-menu-button:hover {
+  outline: 1px solid rgba(255, 0, 112, 0.40);
+}
+
 .page.theme_dark .content__section-title {
   color: var(--accent-color);
 }
